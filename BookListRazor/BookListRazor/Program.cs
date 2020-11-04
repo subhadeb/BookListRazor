@@ -13,7 +13,7 @@ namespace BookListRazor
     {
         public static void Main(string[] args)
         {
-            //This is the Initial code at 10:45PM
+            //This is the Initial code at 10:45PM Updated 11:45Pm
             CreateHostBuilder(args).Build().Run();
         }
 
