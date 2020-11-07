@@ -1,12 +1,26 @@
-﻿@page
+Now we see the error message.
+
+The error is coming from Model State, We want the error to be displayed from the Client side and dont want it to come from Backend.
+
+In the Pages Under Shared we have _ValidationScriptsPartial. We need a reference to that. So at the end in Create.cshtml.
+
+@section Scripts {
+<partial name="_ValidationScriptsPartial">
+}
+
+On running and putting debugger in the Create Post handler we dont see the debugger hits there on keeping the field empty.
+
+From the next part, let's start working on the Edit functionality.
+
+---------------------------------------------------------------
+--Create.cshtml
+@page
 @model BookListRazor.Pages.BookList.CreateModel
 @{
 }
 
 
 <br />
-<h2>Create New Book</h2>
-<br/>
 
 <div class="border container" style="padding:30px">
     <form method="post">
@@ -52,3 +66,12 @@
 @section Scripts {
 <partial name="_ValidationScriptsPartial">
 }
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+
+
