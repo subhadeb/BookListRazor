@@ -14,12 +14,12 @@ function loadDataTable() {
         'columns': [
             { 'data': 'name', 'width': '20%' },
             { 'data': 'author', 'width': '20%' },
-            { 'data': 'name', 'width': '20%' },
+            { 'data': 'isbn', 'width': '20%' },
             {
                 'data': 'id',
                 'render': function (data) {
                     return `<div class = 'text-center'>
-            <a href="/BookList/Edit?id=${data}"  class='btn btn-success text-wite' style='cursor:pointer;width:70px;'>
+            <a href="/BookList/Upsert?id=${data}"  class='btn btn-success text-wite' style='cursor:pointer;width:70px;'>
                 Edit
             </a>
             &nbsp;
