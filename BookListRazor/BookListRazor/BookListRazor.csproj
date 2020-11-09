@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="aa_CodesLecturesCore\" />
+    <Folder Include="DataSubha\" />
   </ItemGroup>
 
   <ItemGroup>
